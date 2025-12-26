@@ -1,0 +1,1006 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 70px; /* espacio para header fijo */
+}
+
+/* ========================================
+   HEADER SUPERIOR PROMOCIONES - PUMA MX CLONE
+   Fondo blanco, letras negras negritas, centrado horizontal
+======================================== */
+
+/* CONTENEDOR PRINCIPAL DE LA BARRA PROMOCIONAL */
+.promo-bar {
+  background-color: #ffffff;        /* Fondo blanco exacto */
+  color: #000000;                   /* Letras negras */
+  font-family: Arial, sans-serif;   /* Fuente similar a Puma */
+  font-size: 11px;                  /* Tamaño pequeño barra superior */
+  line-height: 1.4;
+  padding: 18px 0 11px 0;        /* Espaciado arriba y abajo */
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0; /* Borde sutil inferior */
+}
+
+/* CONTENEDOR INTERNO - FLEXBOX CENTRADO */
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 16px;          /* Espacio entre elementos */
+  flex-wrap: wrap;    /* Responsivo móviles */
+}
+
+/* ========================================
+   ESTILOS ESPECÍFICOS - NEGRITAS + HOVER
+======================================== */
+
+/* NEGRITAS EN TODO EL HEADER (¡IMPORTANTE!) */
+.promo-bar * {
+  font-weight: bold !important;
+}
+
+/* LINKS - SIN SUBRAYADO POR DEFECTO */
+.promo-link {
+  text-decoration: none;     /* Sin subrayado inicial */
+  color: #000000;            /* Negro */
+  transition: all 0.2s ease; /* Transición suave */
+}
+
+/* HOVER - SUBRAYADO + COLOR ROJO PUMA */
+.promo-link:hover {
+  text-decoration: underline;  /* ✨ SUBRAYADO AL PASAR MOUSE */
+  color: #000000;              /* Rojo Puma característico */
+}
+
+/* SEPARADORES VERTICALES ( | ) */
+.promo-separator {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* TEXTO MSI (sin link) */
+.msi {
+  font-weight: bold; /* Mantiene negritas */
+}
+
+/* ========================================
+   RESPONSIVO - MÓVILES
+======================================== */
+@media (max-width: 768px) {
+  .promo-bar {
+    font-size: 11px;
+  }
+  
+  .promo-container {
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .promo-text.msi {
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+/* ========================================
+   HEADER PRINCIPAL NEGRO - NAVEGACIÓN PUMA
+======================================== */
+.main-nav {
+  background-color: #000000;
+  padding: 15px 0;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* CONTENEDOR GENERAL */
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: 'Sodo Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   LADO IZQUIERDO: LOGO + MENÚ (DESKTOP)
+======================================== */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.logo-link {
+  display: block;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.main-menu {
+  display: flex;
+  gap: 17px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.main-menu .nav-link {
+  color: #ffffff;        /* Texto blanco */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.main-menu .nav-link:hover {
+  color: #ffffff;        /* Color al pasar el mouse (rojo tipo Puma) */
+}
+
+
+/* ========================================
+   LADO DERECHO: BÚSQUEDA + ICONOS (DESKTOP)
+======================================== */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-btn {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 20px;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.search-icon {
+  height: 18px;
+  width: 18px;
+}
+
+.nav-icon {
+  display: block;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.nav-icon:hover {
+  opacity: 0.7;
+}
+
+.icon-img {
+  height: 24px;
+  width: 24px;
+}
+
+/* ========================================
+   ELEMENTOS ESPECIALES PARA MÓVIL
+   (icono hamburguesa y lupa suelta)
+======================================== */
+
+/* Por defecto ocultos en desktop */
+.mobile-menu-toggle,
+.mobile-search-icon {
+  display: none;
+}
+
+/* Contenedor central para logo en móvil */
+.nav-center-mobile {
+  display: none;
+}
+
+/* ========================================
+   TABLET (≤ 1024px)
+======================================== */
+@media (max-width: 1024px) {
+  .nav-left {
+    gap: 25px;
+  }
+
+  .main-menu {
+    gap: 12px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .search-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+/* ========================================
+   MÓVIL (≤ 768px)
+   Se reorganiza como en la imagen:
+   [☰] [lupa]   LOGO   [usuario] [carrito]
+   - Se oculta el menú de texto
+   - Se quita botón grande BUSCAR
+   - Solo se muestran los iconos principales
+======================================== */
+@media (max-width: 768px) {
+
+  .nav-container {
+    max-width: 100%;
+    padding: 0 10px;
+    align-items: center;
+  }
+
+  /* Ocultamos menú de texto y botón grande */
+  .main-menu {
+    display: none;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  /* LADO IZQUIERDO EN MÓVIL:
+     Hamburguesa + lupa icono */
+  .nav-left {
+    gap: 10px;
+  }
+
+  .mobile-menu-toggle,
+  .mobile-search-icon {
+    display: flex;        /* Ahora sí visibles */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .mobile-menu-toggle img,
+  .mobile-search-icon img {
+    height: 22px;
+    width: 22px;
+  }
+
+  /* Logo centrado en móvil */
+  .logo-link {
+    display: none;        /* Ocultamos el logo de la izquierda */
+  }
+
+  .nav-center-mobile {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .nav-center-mobile .logo-img {
+    height: 32px;
+  }
+
+  /* LADO DERECHO EN MÓVIL:
+     Solo usuario + carrito (puedes ocultar favoritos) */
+  .nav-right {
+    gap: 8px;
+  }
+
+  .nav-icon {
+    padding: 8px;
+  }
+
+  .icon-img {
+    height: 22px;
+    width: 22px;
+  }
+
+  /* Si quieres ocultar favoritos en móvil: */
+  .nav-icon--favorites {
+    display: none;
+  }
+}
+
+/* ========================================
+   MÓVIL PEQUEÑO (≤ 480px)
+======================================== */
+@media (max-width: 480px) {
+
+  .nav-container {
+    padding: 0 8px;
+  }
+
+  .nav-center-mobile .logo-img {
+    height: 28px;
+  }
+
+  .mobile-menu-toggle img,
+  .mobile-search-icon img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .icon-img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+
+
+
+
+
+/* CONTENEDOR PRINCIPAL DEL BANNER 1 - 4 */
+/* Cada bloque imagen+texto */
+.hero-section {
+    position: relative;
+    margin-bottom: 40px;      /* Separación entre banners en pantalla completa */
+}
+
+/* Banner con imagen de fondo */
+.hero-banner {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+/* Imagen dentro del banner ocupando todo */
+.hero-banner .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Texto + botón (por defecto debajo del banner) */
+.hero-content {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 20px 40px;
+}
+
+.hero-content h2 {
+  font-size: 39px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 12px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* ===== Desktop: texto sobre la imagen ===== */
+@media (min-width: 769px) {
+  .hero-banner {
+    position: 780px;
+  }
+
+  .hero-content {
+    position: absolute;
+    left: 50%;
+    top: 60%;           /* 60% de alto = zona media-baja */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 10px 20px;
+    text-align: center;
+    color: #ffffff;
+    background: transparent;
+  }
+}
+
+/* ===== Tablet / móvil: texto FUERA de la imagen ===== */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 380px;
+  }
+
+  .hero-content {
+    position: static;
+    transform: none;
+    background: #ffffff;
+    color: #000000;
+    padding: 20px 20px 40px;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+  }
+
+  .hero-btn {
+    padding: 10px 30px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    height: 320px;
+  }
+
+  .hero-content h2 {
+    font-size: 20px;
+  }
+}
+
+
+
+
+/* Carrusel Trending Now */
+/* CONTENEDOR PRINCIPAL */
+.trending-section {
+  max-width: 1600px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* TÍTULO */
+.trending-header h2 {
+  font-size: 33px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  letter-spacing: 0px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* CARRUSEL */
+.trending-carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* FLECHAS */
+.trend-arrow {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* VENTANA VISIBLE */
+.trending-wrapper {
+  overflow: hidden;
+  flex: 1;
+}
+
+/* PISTA DESLIZABLE */
+.trending-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* CARD: 4 visibles, 5ª se ve al mover flecha */
+.trend-card {
+  flex: 0 0 25%;          /* 4 cards por vista (100/4) */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Imagen de la card */
+.trend-card img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;;
+}
+
+/* Título de card */
+.trend-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+/* Descripción de un renglón */
+.trend-card p {
+  font-size: 12px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Botón VER MÁS */
+.trend-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.trend-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .trend-card {
+    flex: 0 0 33.333%;    /* 3 cards visibles */
+  }
+}
+
+@media (max-width: 768px) {
+  .trend-card {
+    flex: 0 0 50%;        /* 2 cards visibles en tablet/móvil grande */
+  }
+}
+
+@media (max-width: 480px) {
+  .trend-card {
+    flex: 0 0 100%;       /* 1 card por vista en móvil pequeño */
+  }
+}
+
+
+/* Dual Banner IMAGEN + TEXTO FIJO */
+
+/* CONTENEDOR PADRE 95% ANCHO */
+.dual-banner {
+  width: 95%;
+  max-width: 1300px;
+  margin: 60px auto;
+  display: flex;
+  gap: 20px;
+}
+
+/* CADA IMAGEN COMO CONTENEDOR RELATIVO */
+.banner-item {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* IMÁGENES RESPONSIVE */
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Llena el contenedor sin deformarse */
+  display: block;
+}
+
+/* TEXTO SUPERPUESTO CENTRO-INFERIOR */
+.banner-text {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;             /* Centro-bajo aproximado */
+  transform: translateX(-50%);
+  color: #ffffff;
+  text-align: center;
+  margin: 0 5px;         /* margen 0 10 0 10 aprox */
+}
+
+/* Texto mediano (izquierda) */
+.banner-text-medium p {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .banner-text-large p {
+    font-size: 24px;
+  }
+  .banner-text-medium p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Las imágenes se apilan en vertical en móvil */
+  .dual-banner {
+    flex-direction: column;
+  }
+
+  /* El texto sigue pegado a la parte baja de cada imagen */
+  .banner-text {
+    bottom: 6%;
+    margin: 0 10px;
+  }
+
+  .banner-text-large p {
+    font-size: 20px;
+  }
+
+  .banner-text-medium p {
+    font-size: 16px;
+  }
+}
+
+
+/* LOGOS SECTION CARRUSEL */
+/* CONTENEDOR PRINCIPAL */
+.logos-section {
+  max-width: 1300px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.logos-header h2 {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+    text-align: center;
+    font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+}
+
+/* CARRUSEL */
+.logos-carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logos-arrow {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* VENTANA */
+.logos-wrapper {
+  overflow: hidden;
+  flex: 1;
+}
+
+/* PISTA */
+.logos-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* ÍTEMS: 6 visibles en desktop */
+.logos-item {
+  flex: 0 0 16.6667%;   /* 100 / 6 */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.logos-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* RESPONSIVE: tablet - 4 visibles */
+@media (max-width: 1024px) {
+  .logos-item {
+    flex: 0 0 25%;      /* 4 por vista */
+  }
+}
+
+/* RESPONSIVE: móvil - 2 visibles */
+@media (max-width: 768px) {
+  .logos-item {
+    flex: 0 0 50%;      /* 2 por vista */
+  }
+}
+
+
+/* SECTION INFORMATIVA PUMA */
+.about-puma {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #ffffff;      /* Puedes cambiarlo si quieres otra sección */
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;                /* Respeta márgenes laterales en móvil */
+  text-align: left;
+  font-family: 'Sodo Sans', Arial, sans-serif;
+  color: #111111;
+}
+
+/* Título principal */
+.about-container h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Párrafos */
+.about-container p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .about-puma {
+    padding: 40px 0;
+  }
+
+  .about-container h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .about-container p {
+    font-size: 14px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 0 15px;
+  }
+
+  .about-container h2 {
+    font-size: 20px;
+  }
+
+  .about-container p {
+    font-size: 13px;
+  }
+}
+
+
+/* footer */
+.puma-footer {
+  background-color: #111111;
+  color: #ffffff;
+  font-family: 'Sodo Sans', Arial, sans-serif;
+  padding-top: 40px;
+}
+
+/* TOP: columnas */
+.footer-top {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.footer-title {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default; /* en desktop no parece botón */
+}
+
+.footer-arrow {
+  font-size: 14px;
+}
+
+/* lista de links */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 6px;
+}
+
+.footer-list a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
+}
+
+/* columna newsletter */
+.footer-news p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* newsletter */
+.footer-newsletter {
+  display: flex;
+  margin: 10px 0 20px;
+}
+
+.footer-newsletter input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 13px;
+}
+
+.footer-newsletter button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer-social a {
+  margin-right: 12px;
+}
+
+.footer-social img {
+  height: 22px;
+  width: 22px;
+}
+
+/* MIDDLE: idioma y pagos */
+.footer-middle {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  padding: 20px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-language .lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: 1px solid #333333;
+  padding: 10px 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer-language img {
+  height: 20px;
+  width: 20px;
+}
+
+.footer-payments img {
+  height: 28px;
+  margin-left: 12px;
+}
+
+/* BOTTOM: legales */
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 12px 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* =======================
+   RESPONSIVE: TABLET
+======================= */
+@media (max-width: 1024px) {
+  .footer-top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =======================
+   RESPONSIVE: MÓVIL / VENTANA CHICA
+   - Columnas en una sola
+   - Acordeón: listas plegadas
+======================= */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer-title {
+    padding: 12px 0;
+    border-bottom: 1px solid #333333;
+    cursor: pointer; /* ahora sí, botón */
+  }
+
+  /* Por defecto, ocultamos contenido en móvil */
+  .footer-list,
+  .footer-news > .footer-list {
+    display: none;
+    padding-top: 8px;
+  }
+
+  /* Estado abierto (clase que pondrá JS) */
+  .footer-column.open .footer-list,
+  .footer-column.open .footer-news > .footer-list,
+  .footer-column.open > .footer-list {
+    display: block;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

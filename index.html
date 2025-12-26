@@ -3,9 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+        <link rel="icon" type="image/png" href="assets/plogo.jpg">
+        <title>PUMA.clon | Ropa, Calzado, Accesorios</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    
+
+    <!-- Header 1-->
+    <header class="promo-bar">
+        <div class="promo-container">
+            <a href="https://mx.puma.com/mx/es/go-wild.html" class="promo-link go-wild">
+                GO WILD
+            </a>
+                <span class="promo-separator">|</span>
+            <a href="https://mx.puma.com/mx/es/promociones.html" class="promo-link envios">
+                ENVÍOS GRATIS a partir de $1,299 MXN
+            </a>
+                <span class="promo-separator">|</span>
+            <span class="promo-text msi">
+                6 MSI en compras mayores a $2,999 MXN con PayPal
+            </span>
+        </div>
+    </header>
+
+    <!-- HEADER 2 -->
+    <header class="main-nav">
+        
+        <div class="nav-container">
+
+            <!-- IZQUIERDA: HAMBURGUESA + LUPA MÓVIL + LOGO DESKTOP -->
+            <div class="nav-left">
+                <!-- Hamburguesa móvil -->
+                <div class="mobile-menu-toggle">
+                    <img src="assets/icons/ham.png" alt="Menú">
+                </div>
+
+            <!-- Lupa móvil -->
+            <div class="mobile-search-icon">
+                <img src="assets/icons/bus.png" alt="Buscar">
+            </div>
+
+            <!-- Logo solo desktop/tablet -->
+            <a href="index.html" class="logo-link">
+                <img src="assets/plogo.jpg" alt="Puma" class="logo-img">
+            </a>
+
+            <!-- Menú solo desktop/tablet -->
+            <nav class="main-menu">
+                <a href="#" class="nav-link">Gift guide</a>
+                <a href="#" class="nav-link">Mujeres</a>
+                <a href="#" class="nav-link">Hombres</a>
+                <a href="#" class="nav-link">Niños</a>
+                <a href="#" class="nav-link">Deportes</a>
+                <a href="#" class="nav-link">Colecciones</a>
+                <a href="#" class="nav-link">Rebajas</a>
+            </nav>
+        </div>
+
+        <!-- CENTRO: LOGO SOLO MÓVIL -->
+        <div class="nav-center-mobile">
+            <a href="index.html">
+            <img src="assets/plogo.jpg" alt="Puma" class="logo-img">
+            </a>
+        </div>
+
+        <!-- DERECHA: ICONOS -->
+        <div class="nav-right">
+        <!-- Favoritos: se ocultará en móvil con .nav-icon--favorites -->
+        <a href="#" class="nav-icon nav-icon--favorites">
+            <img src="assets/icons/fav.png" alt="Favoritos" class="icon-img">
+        </a>
+        <a href="#" class="nav-icon">
+            <img src="assets/icons/usu.png" alt="Usuario" class="icon-img">
+        </a>
+        <a href="#" class="nav-icon">
+            <img src="assets/icons/car.png" alt="Carrito" class="icon-img">
+        </a>
+        </div>
+
+    </div>
+</header>
+
+    <!-- Banner IMAGEN 1 -->
+        <section class="hero-section">
+            <div class="hero-banner">
+                <img
+                    src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw5b5d7f9c/2025/DIC/RAYADOS/SERGIO_RAMOS_ES_DESKTOP.png?q=80"
+                    alt="Promoción Puma 1"
+                    class="hero-img"
+                >
+            </div>
+
+            <div class="hero-content">
+                <h2>¡ÚLTIMAS PIEZAS!</h2>
+                <button class="hero-btn">COMPRAR</button>
+            </div>
+        </section>
+
+    <!-- Banner IMAGEN 2 -->
+        <section class="hero-section">
+            <div class="hero-banner">
+                <img
+                    src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dwe01fdbb5/2025/DIC/HOLIDAY/Large%20Full%20Bleed%20Hero_FF_(Desktop%201920x845).jpg?q=80"
+                    alt="Promoción Puma 2"
+                    class="hero-img"
+                >
+            </div>
+        </section>
+
+    <!-- Banner IMAGEN 3 -->
+        <section class="hero-section">
+            <div class="hero-banner">
+                <video class="hero-img" 
+                src="assets/vidban.mp4" autoplay muted loop playsinline>
+                </video>
+            </div>
+
+            <div class="hero-content">
+                <h2>PHONE HOME</h2>
+                <button class="hero-btn">PUMA X E.T.</button>
+            </div>
+        </section>
+
+    <!-- Banner IMAGEN 4 -->
+        <section class="hero-section">
+            <div class="hero-banner">
+                <img
+                    src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dwb1e34836/2025/BUEN%20FIN%202025/REBAJAS/Piezas-Speedcat-Ballet_KV2-2000x694.jpg?q=80"
+                    alt="Promoción Puma 4"
+                    class="hero-img"
+                >
+            </div>
+
+            <div class="hero-content">
+                <button class="hero-btn">COMPRAR</button>
+            </div>
+        </section>
+
+
+        <!-- Banner Carrusel Trending Now -->
+
+        <section class="trending-section">
+            <!-- Título -->
+            <div class="trending-header">
+                <h2>TRENDING NOW</h2>
+            </div>
+
+            <!-- Carrusel -->
+            <div class="trending-carousel">
+            <!-- Flecha izquierda -->
+                <button class="trend-arrow arrow-left">&#10094;</button>
+
+                <!-- Ventana visible -->
+                <div class="trending-wrapper">
+                <div class="trending-track">
+                    <!-- CARD 1 -->
+                    <article class="trend-card">
+                        <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dweaf3df11/2025/DIC/SPEEDCAT/26SS_Ecom_SP_Speedcat_EPLP_Full-Bleed-Hero_Tab-Mob_1536x1536px.jpg?q=80" alt="Producto 1">
+                        <h3>SPEEDCAT</h3>
+                        <p>LUXE COLLECTION</p>
+                        <button class="trend-btn">VER MÁS</button>
+                    </article>
+
+                    <!-- CARD 2 -->
+                    <article class="trend-card">
+                        <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw2965ab86/2025/OCT/SONIC/25AW_Ecom_SP_Sonic_Homepage_Full-Bleed-Hero_Tab-Mob_1536x1536px.jpg?q=80" alt="Producto 2">
+                        <h3>COLABORACIONES ICONICAS</h3>
+                        <p>TRANSFORMA TU OUTFIT</p>
+                        <button class="trend-btn">VER MÁS</button>
+                    </article>
+
+                    <!-- CARD 3 -->
+                    <article class="trend-card">
+                        <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw0719846d/2025/DIC/COLORES%20TEMPORADA/Large%20Full%20Bleed%20Hero_1536x1536_CT_.jpg?q=80" alt="Producto 3">
+                        <h3>COLORES TEMPORADA</h3>
+                        <p>QUE ELEVARAN TU LOOK</p>
+                        <button class="trend-btn">VER MÁS</button>
+                    </article>
+
+                    <!-- CARD 4 -->
+                    <article class="trend-card">
+                        <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw4e63a196/2025/DIC/SCOOT/312226_01_mod01.png?q=80" alt="Producto 4">
+                        <h3>SCOOT ZEROS || CRYSTAL</h3>
+                        <p>BY SCOOT HENDERSON</p>
+                        <button class="trend-btn">VER MÁS</button>
+                    </article>
+
+                    <!-- CARD 5 -->
+                    <article class="trend-card">
+                        <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw9976109b/2025/DIC/COLORES%20TEMPORADA/632541_92_mod01.png?q=80" alt="Producto 5">
+                        <h3>CHAMARRAS Y HOODIES</h3>
+                        <p>PERFECTAS PARA EL FRIO</p>
+                        <button class="trend-btn">VER MÁS</button>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Flecha derecha -->
+                <button class="trend-arrow arrow-right">&#10095;</button>
+        </div>
+        </section>
+
+            
+
+            <!-- DUAL BANNER IMAGENES + TEXTO FIJADO -->
+            <section class="dual-banner">
+                <!-- IMAGEN IZQUIERDA -->
+                <div class="banner-item">
+                    <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw63a709af/2025/GIFT%20GUIDE/25AW_PNA_SP_Holiday_Living-Room_Mom-Dad-Duo_0926_RGB.jpg?q=80" alt="Imagen izquierda" class="banner-img">
+                    <div class="banner-text banner-text-medium">
+                    <p>GUIFT GUIDE</p>
+                </div>
+            </div>
+
+            <!-- IMAGEN DERECHA -->
+            <div class="banner-item">
+                <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw1044bf0d/2025/DIC/CHIVAS/CHIVAS_LYM_Mobile_1536x1536.jpg?q=80" alt="Imagen derecha" class="banner-img">
+                <div class="banner-text banner-text-large">
+                </div>
+            </div>
+            </section>
+
+        <!-- Banner Carrusel Trending Now -->
+
+        <section class="trending-section">
+            <!-- Título -->
+            <div class="trending-header">
+                <h2>CLÁSICOS PUMA</h2>
+            </div>
+
+            <!-- Carrusel -->
+            <div class="trending-carousel">
+            <!-- Flecha izquierda -->
+                <button class="trend-arrow arrow-left">&#10094;</button>
+
+                <!-- Ventana visible -->
+                <div class="trending-wrapper">
+                <div class="trending-track">
+                    <!-- CARD 1 -->
+                    <article class="trend-card">
+                        <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw233925e9/2025/OCT/GENERICO/396464_01_mod01.jpg?q=80" alt="Producto 1">
+                        <h3>PALERMO</h3>
+                    </article>
+
+                    <!-- CARD 2 -->
+                    <article class="trend-card">
+                        <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw9a189ea0/2025/OCT/GENERICO/398846_01_mod01.jpg?q=80" alt="Producto 2">
+                        <h3>SPEEDCAT</h3>
+                    </article>
+
+                    <!-- CARD 3 -->
+                    <article class="trend-card">
+                        <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dwcbce2148/2025/OCT/GENERICO/399028_09_mod01.jpg?q=80" alt="Producto 3">
+                        <h3>EASY READER</h3>
+                    </article>
+
+                    <!-- CARD 4 -->
+                    <article class="trend-card">
+                        <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dwc8fd1d19/2025/OCT/GENERICO/399781_26_mod01.jpg?q=80" alt="Producto 4">
+                        <h3>SUEDE</h3>
+                    </article>
+
+                    <!-- CARD 5 -->
+                    <article class="trend-card">
+                        <img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw787e5b16/2025/AGO/632137_96_mod01.jpg?q=80" alt="Producto 5">
+                        <h3>T7 COLLECTION</h3>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Flecha derecha -->
+                <button class="trend-arrow arrow-right">&#10095;</button>
+        </div>
+        </section>
+
+        <!-- LOGOS SECTION CARRUSEL -->
+        <section class="logos-section">
+            <div class="logos-header">
+                <h2>APOYA A TU EQUIPO</h2>
+            </div>
+
+            <div class="logos-carousel">
+                <button class="logos-arrow logos-left">&#10094;</button>
+                    <div class="logos-wrapper">
+                        <div class="logos-track">
+                            <div class="logos-item"><img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw5b09e731/2025/DIC/FEDERACIONES/GDL.jpg?q=80" alt="Logo 1"></div>
+                            <div class="logos-item"><img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dwd1cb9ece/2025/DIC/FEDERACIONES/MTY.jpg?q=80" alt="Logo 2"></div>
+                            <div class="logos-item"><img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw997def54/2025/DIC/FEDERACIONES/PORTUGAL.jpg?q=80" alt="Logo 3"></div>
+                            <div class="logos-item"><img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw176962fc/2025/689678_02_sv02.png?q=80" alt="Logo 4"></div>
+                            <div class="logos-item"><img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw909b5784/2025/689678_02%20(1).png?q=80" alt="Logo 5"></div>
+                            <div class="logos-item"><img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw8d770fcc/2025/DIC/FEDERACIONES/SUIZA.jpg?q=80" alt="Logo 6"></div>
+                            <div class="logos-item"><img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw736be0f2/2025/DIC/FEDERACIONES/AUSTRIA.jpg?q=80" alt="Logo 7"></div>
+                            <div class="logos-item"><img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw5c52e617/2025/DIC/FEDERACIONES/R_CHECA.jpg?q=80" alt="Logo 8"></div>
+                            <div class="logos-item"><img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw80802c74/2025/DIC/FEDERACIONES/ISLANDIA.jpg?q=80" alt="Logo 9"></div>
+                            <div class="logos-item"><img src="https://mx.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw490182c4/2025/689678_02_sv03.png?q=80" alt="Logo 10"></div>
+                        </div>
+                    </div>
+                <button class="logos-arrow logos-right">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- SECTION INFORMATIVA PUMA -->
+        <section class="about-puma">
+            <div class="about-container">
+                <h2>Descubre la velocidad y el estilo únicos de PUMA México</h2>
+
+                <p>
+                Bienvenidos la página oficial de PUMA México, donde el ritmo nunca para y cada producto te lleva más allá de tus límites.
+                </p>
+
+                <p>
+                Navega por nuestra tienda online y descubre cómo la innovación, el rendimiento y la comodidad se materializan en cada par de tenis, cada set de ropa y en cada accesorio que tenemos para ti. ¿Buscas comodidad sin sacrificar el estilo? ¿Necesitas tenis para mujer o para hombre? ¿Quieres usar productos PUMA originales? Estás en el lugar correcto.
+                </p>
+
+                <p>
+                Desde el clásico tenis Palermo blanco, hasta los jerseys de tu equipo favorito, cada una de nuestras líneas combinan materiales de primera con diseños audaces que capturan la esencia del deporte y del street style. Y no te pierdas nuestras ediciones limitadas y lanzamientos de marca exclusivos que te mantendrán siempre un paso adelante del resto.
+                </p>
+
+                <p>
+                ¡Es hora de acelerar tu juego con PUMA México! Vive la experiencia completa de PUMA en línea, encuentra tus nuevos favoritos hoy mismo y descubre por qué en PUMA siempre somos “Forever Faster”.
+                </p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+            <footer class="puma-footer">
+                <div class="footer-top">
+
+                    <!-- COLUMNA 1: AYUDA -->
+                    <div class="footer-column">
+                        <button class="footer-title" data-footer-toggle>
+                            AYUDA
+                            <span class="footer-arrow">⌄</span>
+                        </button>
+                        <ul class="footer-list">
+                            <li><a href="#">Contáctanos</a></li>
+                            <li><a href="#">Métodos de pago</a></li>
+                            <li><a href="#">Devoluciones</a></li>
+                            <li><a href="#">Promociones</a></li>
+                            <li><a href="#">Facturación</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COLUMNA 2: SERVICIOS -->
+                    <div class="footer-column">
+                        <button class="footer-title" data-footer-toggle>
+                        SERVICIOS
+                        <span class="footer-arrow">⌄</span>
+                        </button>
+                        <ul class="footer-list">
+                            <li><a href="#">Tiendas</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Cuidado de los productos</a></li>
+                            <li><a href="#">Guía de tallas</a></li>
+                            <li><a href="#">Programa de afiliados</a></li>
+                            <li><a href="#">Recomienda a un amigo</a></li>
+                            <li><a href="#">Descuento para estudiantes</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COLUMNA 3: ACERCA DE PUMA -->
+                    <div class="footer-column">
+                        <button class="footer-title" data-footer-toggle>
+                        ACERCA DE PUMA
+                        <span class="footer-arrow">⌄</span>
+                        </button>
+                        <ul class="footer-list">
+                            <li><a href="#">GO WILD</a></li>
+                            <li><a href="#">Compañía</a></li>
+                            <li><a href="#">Noticias Corporativas</a></li>
+                            <li><a href="#">Empleo</a></li>
+                            <li><a href="#">Hot Sale</a></li>
+                            <li><a href="#">Buen Fin</a></li>
+                            <li><a href="#">Black Friday</a></li>
+                            <li><a href="#">Cyber Days</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COLUMNA 4: MANTENTE AL DÍA -->
+                    <div class="footer-column footer-news">
+                    <button class="footer-title" data-footer-toggle>
+                        MANTENTE AL DÍA
+                        <span class="footer-arrow">⌄</span>
+                    </button>
+                    <div class="footer-list">
+                        <p>Inscríbete y obtén 15% de descuento en tu primera compra</p>
+                        <form class="footer-newsletter">
+                        <input type="email" placeholder="Ingresa tu correo electrónico">
+                        <button type="submit">REGÍSTRATE</button>
+                        </form>
+
+                        <div class="footer-social">
+                        <!-- Deja los espacios para tus iconos PNG -->
+                        <a href="#"><img src="assets/icons/face.png" alt="Facebook"></a>
+                        <a href="#"><img src="assets/icons/x.png" alt="X"></a>
+                        <a href="#"><img src="assets/icons/ins.png" alt="Instagram"></a>
+                        <a href="#"><img src="assets/icons/you.png" alt="YouTube"></a>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <!-- SELECTOR DE IDIOMA + MÉTODOS DE PAGO -->
+                <div class="footer-middle">
+                    <div class="footer-language">
+                    <button class="lang-btn">
+                        <!-- espacio para bandera PNG -->
+                        <img src="assets/icons/mexico.png" alt="México">
+                        <span>ESPAÑOL</span>
+                        <span class="footer-arrow">⌄</span>
+                    </button>
+                    </div>
+
+                    <div class="footer-payments">
+                    <!-- deja los slots para PNG de tarjetas -->
+                    <img src="assets/icons/visa.png" alt="Visa">
+                    <img src="assets/icons/tarjeta.png" alt="Mastercard">
+                    <img src="assets/icons/american-express.png" alt="American Express">
+                    <img src="assets/icons/paypal.png" alt="PayPal">
+                    </div>
+                </div>
+
+                <!-- BOTTOM LEGAL -->
+                <div class="footer-bottom">
+                    <div class="footer-links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Configurador de cookies</a>
+                    </div>
+                    <div class="footer-copy">
+                    <span>©PUMA-Clon, 2025. Todos los derechos reservados a Julio Federico Melendez Peña</span>
+                    </div>
+                </div>
+            </footer>
+
 </body>
+<script src="scripts.js"></script>
 </html>
